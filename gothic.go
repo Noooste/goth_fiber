@@ -11,10 +11,10 @@ import (
 	"net/url"
 	"strings"
 
+	"github.com/Noooste/goth"
+	"github.com/Noooste/goth/gothic"
 	"github.com/gofiber/fiber/v3"
 	"github.com/gofiber/fiber/v3/middleware/session"
-	"github.com/markbates/goth"
-	"github.com/markbates/goth/gothic"
 )
 
 // ProviderParamKey can be used as a key in context when passing in a provider
