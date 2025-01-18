@@ -35,7 +35,7 @@ func init() {
 		CookieHTTPOnly: true,
 	}
 
-	SessionStore = session.New(config)
+	SessionStore = session.NewStore(config)
 }
 
 /*
