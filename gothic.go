@@ -7,6 +7,7 @@ import (
 	"encoding/base64"
 	"errors"
 	"fmt"
+	"github.com/gofiber/fiber/v3/extractors"
 	"io"
 	"net/url"
 	"strings"
@@ -31,7 +32,7 @@ type key int
 func init() {
 	// optional config
 	config := session.Config{
-		Extractor:      session.FromCookie(gothic.SessionName),
+		Extractor:      extractors.FromCookie(gothic.SessionName),
 		CookieHTTPOnly: true,
 	}
 
